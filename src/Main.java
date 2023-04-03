@@ -70,13 +70,34 @@ public class Main {
 
     public static void task8 () {
         System.out.println("Задача 8");
+
+        int deposit = 29_000;
+        int sum = 0;
+
+        for (int i = 1; i <= 12; i++) {
+            sum = sum + deposit;
+            System.out.println("Месяц " + i + ": сумма накоплений равна " + sum + " рублей");
+        }
     }
 
     public static void task9 () {
         System.out.println("Задача 9");
+
+        int deposit = 29_000;
+        int sum = 0;
+
+        for (int i = 1; i <= 12; i++) {
+            sum = sum + sum/100;
+            sum = sum + deposit;
+            System.out.println("Месяц " + i + ": сумма накоплений равна " + sum + " рублей");
+        }
     }
 
     public static void task10 () {
         System.out.println("Задача 10");
+
+        for (int i = 0; i <= 10; i++) {
+            System.out.println("2 * " + i + " = " + 2*i);
+        }
     }
 }
